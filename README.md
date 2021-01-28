@@ -1,71 +1,61 @@
-# VBA Homework - The VBA of Wall Street
+Background
+While your data companions rushed off to jobs in finance and government, you remained adamant that science was the way for you. Staying true to your mission, you've joined Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
-## Background
+As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 250 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. You have been tasked by the executive team to generate all of the tables and figures needed for the technical report of the study. The executive team also has asked for a top-level summary of the study results.
 
-You are well on your way to becoming a programmer and Excel master! In this homework assignment you will use VBA scripting to analyze real stock market data. Depending on your comfort level with VBA, you may choose to challenge yourself with a few of the challenge tasks.
+Instructions
+Your tasks are to do the following:
 
-### Before You Begin
+Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
-1. Create a new repository for this project called `VBA-challenge`. **Do not add this homework to an existing repository**.
+Generate a bar plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the number of data points for each treatment regimen.
 
-2. Inside the new repository that you just created, add any VBA files you use for this assignment. These will be the main scripts to run for each analysis.
+NOTE: These plots should look identical.
+Generate a pie plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the distribution of female or male mice in the study.
 
-### Files
+NOTE: These plots should look identical.
+Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
 
-* [Test Data](Resources/alphabetical_testing.xlsx) - Use this while developing your scripts.
+Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
 
-* [Stock Data](Resources/Multiple_year_stock_data.xlsx) - Run your scripts on this data to generate the final homework report.
+Hint: All four box plots should be within the same figure. Use this Matplotlib documentation page for help with changing the style of the outliers.
 
-### Stock market analyst
+Generate a line plot of time point versus tumor volume for a single mouse treated with Capomulin.
 
-![stock Market](Images/stockmarket.jpg)
+Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
-## Instructions
+Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
 
-* Create a script that will loop through all the stocks for one year and output the following information.
+Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
 
-  * The ticker symbol.
+Here are some final considerations:
 
-  * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
+You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, x-axis and y-axis limits, etc.
 
-  * The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
+See the starter workbook for help on what modules to import and expected format of the notebook.
 
-  * The total stock volume of the stock.
+Hints and Considerations
+Be warned: These are very challenging tasks. Be patient with yourself as you trudge through these problems. They will take time and there is no shame in fumbling along the way. Data visualization is equal parts exploration, equal parts resolution.
 
-* You should also have conditional formatting that will highlight positive change in green and negative change in red.
+You have been provided a starter notebook. Use the code comments as a reminder of steps to follow as you complete the assignment.
 
-* The result should look as follows.
+Don't get bogged down in small details. Always focus on the big picture. If you can't figure out how to get a label to show up correctly, come back to it. Focus on getting the core skeleton of your notebook complete. You can always revisit old problems.
 
-![moderate_solution](Images/moderate_solution.png)
+While you are trying to complete this assignment, feel encouraged to constantly refer to Stack Overflow and the Pandas documentation. These are needed tools in every data analyst's tool belt.
 
-### CHALLENGES
+Remember, there are many ways to approach a data problem. The key is to break up your task into micro tasks. Try answering questions like:
 
-1. Your solution will also be able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume". The solution will look as follows:
+How does my DataFrame need to be structured for me to have the right x-axis and y-axis?
 
-![hard_solution](Images/hard_solution.png)
+How do I build a basic scatter plot?
 
-2. Make the appropriate adjustments to your VBA script that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
+How do I add a label to that scatter plot?
 
-### Other Considerations
+Where would the labels for that scatter plot come from?
 
-* Use the sheet `alphabetical_testing.xlsx` while developing your code. This data set is smaller and will allow you to test faster. Your code should run on this file in less than 3-5 minutes.
+Again, don't let the magnitude of a programming task scare you off. Ultimately, every programming problem boils down to a handful of bite-sized tasks.
 
-* Make sure that the script acts the same on each sheet. The joy of VBA is to take the tediousness out of repetitive task and run over and over again with a click of the button.
+Get help when you need it! There is never any shame in asking. But, as always, ask a specific question. You'll never get a great answer to "I'm lost."
 
-## Submission
-
-* To submit please upload the following to Github:
-
-  * A screen shot for each year of your results on the Multi Year Stock Data.
-
-  * VBA Scripts as separate files.
-
-* Ensure your repository has regular commits (i.e. 20+ commits), a thorough README.md file
-
-* After everything has been saved, create a sharable link and submit that to <https://bootcampspot-v2.com/>.
-
-- - -
-
-### Copyright
-
+Copyright
 Trilogy Education Services © 2019. All Rights Reserved.
